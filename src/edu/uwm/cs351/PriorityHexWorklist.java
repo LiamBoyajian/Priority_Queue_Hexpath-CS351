@@ -51,8 +51,7 @@ public class PriorityHexWorklist implements Worklist<HexPiece> {
 		// The priority queue should use the map to order pieces
 		costs = m;
 	}
-
-	// TODO
+	
 	// Keep track of he current hex piece (piece last returned by next).
 	// If this is null, it means the worklist is being initialized.
 	// Otherwise, it represents the most recently returned hex piece.
@@ -82,7 +81,7 @@ public class PriorityHexWorklist implements Worklist<HexPiece> {
 			next();
 		}
 		if(lastNext == p) return costPerPiece.get(p);
-		return null; // TODO
+		return null;
 	}
 
 	@Override
